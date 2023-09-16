@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Exo+2:ital,wght@1,300&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Exo+2:ital,wght@1,300&family=Righteous&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'DM Serif Display', serif;
+    font-family: 'Exo 2', sans-serif;
+
+}
+@keyframes fade-down {
+    0%
+    {
+        opacity: 0;
+        transform: translate(50px) scale(1);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translate(0px) scale(1);
+    }
+} 
+
+
+.bg {
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: url(bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container h1 {
+    font-size: 50px;
+    font-family: 'DM Serif Display', serif;
+font-family: 'Exo 2', sans-serif;
+font-family: 'Righteous', cursive;
+margin-top: -150px;
+animation: fade-down 2s;
+}
+
+.setting {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+/* animation: fade-down 3s; */
+
+   
+}
+.setting:hover
+{
+    cursor: pointer;
+}
+
+.setting .fa-gear {
+    font-size: 40px;
+    padding: 5px;
+
+    
+}
+
+.settingcontent input {
+    padding: 15px;
+    /* border: 2px solid; */
+    border-radius: 8px;
+}
+.settingcontent input:hover
+{
+    cursor: pointer;
+    border: 3px solid black;
+}
+
+.btn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 15px;
+    
+}
+
+.btn:hover {
+    background-color: rgb(37, 35, 35);
+    cursor: pointer;
+
+}
+
+.hide {
+    display: none;
+}
+
+.timecontainer {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'DM Serif Display', serif;
+font-family: 'Exo 2', sans-serif;
+font-family: 'Righteous', cursive;
+animation: fade-down 3s;
+
+}
+
+.timecontainer h2 {
+    padding: 0 30px;
+    margin: 15px;
+
+}
+
+.timecontainer div {
+    font-size: 4rem;
+
+}
+.container img
+{
+    width: 55px;
+    margin: 58px 18px 213px; 
+    animation: fade-down 3s;  
+}
